@@ -2,8 +2,11 @@
   "name": "eyes",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start NODE_PATH=src/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +37,14 @@
     "redux": "^4.0.1",
     "reselect": "^4.0.0"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "6.5.0"
+  }
 }

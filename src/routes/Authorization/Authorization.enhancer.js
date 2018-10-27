@@ -2,6 +2,7 @@ import { compose } from 'redux';
 import { lifecycle } from 'recompose';
 import axios from 'axios';
 import qs from 'qs';
+import { routePaths } from 'appConstants/paths';
 
 export default compose(
   lifecycle({
@@ -14,10 +15,10 @@ export default compose(
         case window.location.search.includes('?code='):
           authCode = qs.parse(window.location.search.slice(1)).code;
           await axios.get(`/api/login/${authCode}`);
-          history.push('/home');
+          history.push(routePaths.base);
           break;
         case data.auth:
-          return history.push('/home');
+          return history.push(routePaths.base);
         case !data.auth:
           window.location.replace(data.url);
           break;
