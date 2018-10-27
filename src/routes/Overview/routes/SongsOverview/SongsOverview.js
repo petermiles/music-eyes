@@ -1,15 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import classes from './SongsOverview.scss';
 
-export const SongsOverview = ({ songsOverview }) => (
+export const SongsOverview = () => (
   <div className={classes.root}>
-    <span>SongsOverview Component</span>
-    <pre>{JSON.stringify(songsOverview, null, 2)}</pre>
+    <span>
+      SongsOverview Component
+    </span>
   </div>
 );
-
-SongsOverview.propTypes = {
-  songsOverview: PropTypes.object, // from enhancer (firestoreConnect + connect)
-};
 
 export default SongsOverview;

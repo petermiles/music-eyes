@@ -13,7 +13,9 @@ export const Overview = () => (
       Songs
 
       </span>
-      <span>Overview Component</span>
+      <span>
+        Overview Component
+      </span>
     </Link>
   </div>
 );
