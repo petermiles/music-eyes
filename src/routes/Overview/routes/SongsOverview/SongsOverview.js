@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './SongsOverview.scss';
+import classes from './SongsOverview.module.scss';
 
 export const SongsOverview = () => (
   <div className={classes.root}>
     <span>
-      SongsOverview Component
+      wha Component MF
     </span>
   </div>
 );

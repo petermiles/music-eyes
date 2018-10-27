@@ -3,7 +3,7 @@ export const routePaths = {
   auth: '/auth',
   home: '/home',
   overview: '/overview',
-  songsOverview: '/overview/songs',
+  songsOverview: '/songs',
 };
 
 export default {
